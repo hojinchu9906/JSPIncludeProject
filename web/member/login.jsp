@@ -21,6 +21,18 @@
                 <input type="text" name="id" size="20">
             </td>
         </tr>
+        <tr>
+            <td width="30%" align="right">PW</td>
+            <td width="70%" align="left">
+                <input type="password" name="pwd" size="21">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+                <input type="button" value="로그인">
+                <input type="button" value="회원가입" id="joinBtn">
+            </td>
+        </tr>
     </table>
 </body>
 </html>

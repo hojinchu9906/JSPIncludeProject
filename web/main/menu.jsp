@@ -17,6 +17,10 @@
             <tr height="30">
                 <td align="left"><a href="main.jsp">홈</a></td>
             </tr>
+
+            <tr height="30">
+                <td align="left"><a href="main.jsp?mode=1">회원가입</a></td>
+            </tr>
         </table>
     </center>
 </body>

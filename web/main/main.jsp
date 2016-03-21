@@ -11,7 +11,13 @@
 <%
     //url에 파라미터를 아래처럼 mode로 줄것임.
     //../main/main.jsp?mode=1
+    String id=(String)session.getAttribute("id");
     String log_jsp="";
+    if(id==null){
+        log_jsp="../member/login.jsp";
+    } else
+        log_jsp="../member/logout.jsp";
+
     String req_jsp="";
     String mode=request.getParameter("mode");
 
@@ -36,6 +42,7 @@
 </head>
 <body>
     <center>
+        <%=application.getRealPath("main.jsp")%>
         <table border="1" bordercolor="blue" width="900" cellspacing="0" cellpadding="0" height="700">
             <tr>
                 <td width="100%" height="100" colspan="2">

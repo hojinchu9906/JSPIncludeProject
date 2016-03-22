@@ -40,6 +40,18 @@
                     }
                 %>
             </tr>
+
+            <tr>
+                <%
+                    for(MovieDTO movieDTO:movieDTOList){
+                        %>
+                        <td>
+                            <%=movieDTO.getRegdate()%>
+                        </td>
+                <%
+                    }
+                %>
+            </tr>
         </table>
     </center>
 </body>

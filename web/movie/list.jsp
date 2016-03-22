@@ -28,6 +28,18 @@
                     }
                 %>
             </tr>
+
+            <tr>
+                <%
+                    for(MovieDTO movieDTO:movieDTOList){
+                        %>
+                        <td>
+                            <%=movieDTO.getTitle()%>
+                        </td>
+                <%
+                    }
+                %>
+            </tr>
         </table>
     </center>
 </body>
